@@ -3,27 +3,27 @@
 
 int main(void)
 {
-    int valor_inicial;
-    int valor_final;
-    int ano;
+    int initial_number;
+    int final_number;
+    int year;
 
-    // Pedir os valores para o usuário.
+    // Asking the values for user
     do
     {
-        valor_inicial = get_int("Entre com a quantidade inicial de lhamas: ");
+        initial_number = get_int("Enter the initial number of llamas: ");
     }
-    while(valor_inicial < 9);
+    while(initial_number < 9);
 
     do
     {
-        valor_final = get_int("Entre com a quantidade final de lhamas: ");
+        final_number = get_int("Enter the final number of llamas: ");
     }
-    while(valor_final < valor_inicial);
+    while(final_number < initial_number);
 
     // Calculando a taxa de cresimento.
-    for(ano = 0; valor_inicial < valor_final; ano++)
+    for(year = 0; initial_number < final_number; year++)
     {
-        valor_inicial = valor_inicial + (valor_inicial / 3) - (valor_inicial / 4);
+        initial_number = initial_number + (initial_number / 3) - (initial_number / 4);
     }
-    printf("Years: %i\n", ano);
+    printf("Years: %i\n", year);
 }
