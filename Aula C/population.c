@@ -20,7 +20,7 @@ int main(void)
     }
     while(final_number < initial_number);
 
-    // Calculando a taxa de cresimento.
+    // Calculating the growing rate.
     for(year = 0; initial_number < final_number; year++)
     {
         initial_number = initial_number + (initial_number / 3) - (initial_number / 4);
